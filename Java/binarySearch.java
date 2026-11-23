@@ -29,7 +29,10 @@ public class Main
 	}
 	
 	static int binarySearch(int[] ar, int key) {
+		// Binary Search is only possible with sorted data
 	    Arrays.sort(ar);   
+		IO.println("After sorting, new array:");
+		displayAr(ar);
 	    
 	    // binarySearch algorithm
 	    int low = 0, high = ar.length-1, mid=0;
