@@ -1,5 +1,25 @@
 # Data-Structures
 
+## Array
+
+### Features of array:
+1. **Homogenous** => An array can store items of the same data type only.
+2. **Contiguous memory allocation** => The items are stored next to each other in the memory.
+3. **Fixed size** => Once the array size has been defined, its fixed, and can't be redefined.
+4. **Zero-based indexing** => Every item has a fixed position called index, and it starts from zero.
+   
+### Components of array:
+-**index**      -> every item in an array has a fixed position 
+
+### Operations on Array:
+
+- **access()**    -> Access item using index.
+- **insert()**    -> Insert item at a specific position.
+- **delete()**    -> Delete item from a specific position.
+- **display()**   -> Display all elements of an array
+- **search()**    -> Linear or Binary Search
+- **sort()**      -> Sorting/Rearranging array items in ascending or descending order.
+
 ## Stack
 
 ### Components of Stack:
