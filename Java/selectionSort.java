@@ -22,18 +22,35 @@ public class Main
 	        IO.print(ar[i]+" ");
 	    }
 	}
+	
+	static void selectionSort(int ar[])
+	{
 
- // int head=0;
+        int head=0, min=0;
 	    
-	//     // i counts the no. of iterations which is n-1
-	// 	for (int i=1;i<ar.length;i++) {
+	    // i counts the no. of iterations which is n-1
+		for (int i=0;i<ar.length-1;i++) {
+		   
+		   // assume the current position as min 
+		    min = i;
 		    
-	// 	    // j iterates over the entire array to find the minimum
-	// 	    for (int j=0;j<ar.length-1;j++) {
+		    // j iterates over the entire array to find the minimum
+		    for (int j=head+1;j<ar.length;j++) {
 		        
-	// 	        // finds the minimum
-	// 	        if (ar[j+1] < ar[j]) {
-		            
-	// 	            int temp = ar[j];
-	// 	            ar[j] = ar[j+1];
-	// 	            ar[j+1] = temp;
+		        // finds the minimum
+		        if (ar[j] < ar[min]) {
+		            min = j;
+		        }
+		    }
+		    
+    		// after minimum found swap it with the head element
+		    int temp = ar[head];
+		    ar[head] = ar[min];
+		    ar[min] = temp;
+	        
+	        // after every swap, increment the head 
+		    head++;
+		    
+		}
+	}
+}
